@@ -38,7 +38,8 @@ The source code and execution scripts are located in the `supplementary_code/` d
 
 ## 🙏 Acknowledgments
 
-This work was supported by the Development and Promotion of Science and Technology Talents Project (DPST), Thailand[cite: 1].
+* This work was supported by the **Development and Promotion of Science and Technology Talents Project (DPST)**, Thailand[cite: 1].
+* The authors utilized **Claude (Anthropic)** for manuscript drafting and structuring, and **Gemini (Google)** for content review and refinement[cite: 1]. All technical design, experimental implementation, and scientific conclusions were developed independently by the authors[cite: 1].
 
 ## 📝 Citation
 
