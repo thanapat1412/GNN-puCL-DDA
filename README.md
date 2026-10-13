@@ -24,12 +24,14 @@ The model addresses the inherent bias caused by assuming unlabeled pairs are tru
 
 ```
 GNN-puCL-DDA/
+├── predictions/
+│   └── unlabeled_pairs_prob_ge_0.6.csv   # Scored unlabeled pairs (prob ≥ 0.6, Setting 3, Phase 2)
 ├── supplementary_code/
-│   ├── models.py                    # HeteroGNN architecture and loss functions
-│   ├── utils.py                     # Graph construction, embedding generation, downstream processing
-│   ├── run_setting3.py              # Setting 3: supervised training with puCL objective
-│   ├── run_setting4.py              # Setting 4: puCL + BERT semantic fusion
-│   └── feature_importance.py        # XGBoost feature importance analysis (drug vs disease embeddings)
+│   ├── models.py                          # HeteroGNN architecture and loss functions
+│   ├── utils.py                           # Graph construction, embedding generation, downstream processing
+│   ├── run_setting3.py                    # Setting 3: supervised training with puCL objective
+│   ├── run_setting4.py                    # Setting 4: puCL + BERT semantic fusion
+│   └── feature_importance.py             # XGBoost feature importance analysis (drug vs disease embeddings)
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -46,7 +48,7 @@ GNN-puCL-DDA/
 
 ## Predicted Associations
 
-High-confidence predicted drug–disease associations from Setting 3 (trained on all Phase 2 associations) are available in `predictions/unlabeled_pairs_prob_ge_0.6.csv`. The file contains all unlabeled pairs scoring ≥ 0.6, with columns:
+High-confidence predicted drug–disease associations from Setting 3 (trained on all Phase 2 associations) are available in [predictions/unlabeled_pairs_prob_ge_0.6.csv](predictions/unlabeled_pairs_prob_ge_0.6.csv). The file contains all unlabeled pairs scoring ≥ 0.6, with columns:
 
 ```
 drugbank_id, drug_name, disease_umls_cui, disease_name, probability
