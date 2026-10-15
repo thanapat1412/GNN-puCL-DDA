@@ -31,7 +31,8 @@ GNN-puCL-DDA/
 │   ├── utils.py                           # Graph construction, embedding generation, downstream processing
 │   ├── run_setting3.py                    # Setting 3: supervised training with puCL objective
 │   ├── run_setting4.py                    # Setting 4: puCL + BERT semantic fusion
-│   └── feature_importance.py             # XGBoost feature importance analysis (drug vs disease embeddings)
+│   ├── feature_importance.py             # XGBoost feature importance analysis (drug vs disease embeddings)
+│   └── predict_unlabeled.py              # Full retrain + score all unlabeled pairs → CSV
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -51,7 +52,7 @@ GNN-puCL-DDA/
 High-confidence predicted drug–disease associations from Setting 3 (trained on all Phase 2 associations) are available in [predictions/unlabeled_pairs_prob_ge_0.6.csv](predictions/unlabeled_pairs_prob_ge_0.6.csv). The file contains all unlabeled pairs scoring ≥ 0.6, with columns:
 
 ```
-drugbank_id, drug_name, disease_umls_cui, disease_name, probability
+drugbank_id, disease_umls_cui, probability
 ```
 
 Sorted by probability in descending order.
