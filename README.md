@@ -57,9 +57,18 @@ drugbank_id, disease_umls_cui, probability
 
 Sorted by probability in descending order.
 
-## Setup and Usage
+## Usage
 
-See `supplementary_code/README.md` for environment setup and instructions to run each experimental setting.
+### Data
+Input data files are sourced from the following databases. Access requires registration or subscription:
+
+- [DrugBank](https://go.drugbank.com/) — drug-target interactions
+- [DisGeNET](https://www.disgenet.org/) — disease-gene associations
+- [GOA](https://www.ebi.ac.uk/GOA/) — protein-GO annotations
+- [CTD](https://ctdbase.org/) — drug-disease associations
+
+### Running the scripts
+Scripts in `supplementary_code/` accept command-line arguments for input paths and parameters.
 
 ## Authors
 
