@@ -1,7 +1,8 @@
 """
 Feature Importance Analysis for GNN-puCL-DDA
 =============================================
-Computes XGBoost feature importance (weight, the default) across the
+Computes XGBoost feature importance (normalized gain via feature_importances_,
+the default behavior in XGBoost 3.x) across the
 PU-bagging ensemble to quantify the relative contribution of drug vs.
 disease embeddings to the final prediction.
 
